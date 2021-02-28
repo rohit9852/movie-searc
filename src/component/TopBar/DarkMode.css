@@ -46,16 +46,3 @@ body.dark-mode .content button {
   align-items: center;
 }
 
-input[type='checkbox'].dmcheck {
-  width: 40px;
-  height: 10px;
-  background: rgb(201, 20, 20);
-  position: relative;
-  border-radius: 5px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  vertical-align: 2px;
-  outline: none;
-}

@@ -4,17 +4,16 @@ import TopHeader from './Search';
 function MovieDeatils() {
 
    const [details, setDetails] = useState([])
-    const [id, setId] = useState('')
-
+    const id = localStorage.getItem('myData');
     useEffect(() => {
-        fetch(`http://www.omdbapi.com/?i=tt0371746&apikey=98950665`)
+        fetch(`http://www.omdbapi.com/?i=${id}&apikey=98950665`)
           .then(res => res.json())
           .then(
             (result) => {
                setDetails(result);
             }
           )
-    }, [])
+    }, [id])
    const  {Title,Year, Poster, Runtime, imdbRating, Director, Country, Plot} = details
     return(<>
         <TopHeader/>
