@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState, useEffect, Fragment } from "react";
-import { Router ,Link} from 'react-router-dom';
+import { useState, useEffect} from "react";
+import { Link} from 'react-router-dom';
 function MovieCard(items, getId) {
     let arr = []
     arr.push(items.resultItem);

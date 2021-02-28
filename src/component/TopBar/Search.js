@@ -1,12 +1,8 @@
-import { ReactSearchAutocomplete } from 'react-search-autocomplete'
-
 import { useEffect, useState } from "react";
 import MovieCard from './Moviecard';
 import DarkMode from './DarkMode';
 
 function App({getId}) {
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
 
     const [items, setItems] = useState([]);
     const [searchItem, setSearchItem] = useState('');
@@ -17,7 +13,6 @@ function App({getId}) {
         .then(res => res.json())
         .then(
           (result) => {
-            setIsLoaded(true);
             if(result.Search){
             setItems(result.Search);
             }
