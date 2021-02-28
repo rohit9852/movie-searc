@@ -7,9 +7,9 @@ const DarkModeToggle = () => {
   const darkMode = useDarkMode(false);
 
   return (
-    <div className="dark-mode-toggle">
+    <span className="dark-mode-toggle">
       <Toggle onChange={darkMode.toggle} />
-    </div>
+    </span>
   );
 };
 

@@ -1,5 +1,6 @@
 import './MovieDetails.css'
 import { useEffect, useState } from "react";
+import TopHeader from './Search';
 function MovieDeatils() {
 
    const [details, setDetails] = useState([])
@@ -15,7 +16,8 @@ function MovieDeatils() {
           )
     }, [])
    const  {Title,Year, Poster, Runtime, imdbRating, Director, Country, Plot} = details
-    return(
+    return(<>
+        <TopHeader/>
         <div className="detailsWrapper">
             <img src={Poster}/>
             <div className={'details'}>
@@ -27,6 +29,7 @@ function MovieDeatils() {
                 <p className={'plot'}>{Plot}</p>
             </div>
         </div>
+        </>
     )
     
 }

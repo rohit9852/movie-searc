@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
     <div className="container mt-2" style={{ marginTop: 40 }}>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/home">
           <Home 
           // getId={getId}
           />

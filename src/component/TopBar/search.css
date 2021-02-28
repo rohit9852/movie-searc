@@ -1,0 +1,29 @@
+.position {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.imagePosition {
+    position: absolute;
+    left: 0;
+    margin-left: 30px;
+}
+
+.serch {
+    width: -webkit-fill-available;
+    background-color: antiquewhite;
+    border-radius: 30px;
+}
+
+.lists{
+    background-color: white;
+    overflow: auto;
+    
+}
+
+.listWraper {
+    max-height: fit-content;
+    border: 1px solid rgb(116, 112, 112);
+}

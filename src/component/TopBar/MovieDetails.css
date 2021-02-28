@@ -1,6 +1,5 @@
 .detailsWrapper {
     display: flex;
-    max-width: 600px;
     flex-direction: row;
 }
 .details {
